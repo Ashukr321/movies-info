@@ -1,0 +1,32 @@
+.hero {
+  padding: 20px;
+  @media (min-width: 600px) {
+    padding: 100px 40px;
+  }
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px; /* Increased margin for better spacing */
+  animation: floatUpDown 4s infinite alternate;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.head_tagline{
+  background:linear-gradient(#ff793f,#227093,#ff4d4d) ;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

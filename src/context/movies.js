@@ -19,7 +19,6 @@ const MovieProvider = ({ children }) => {
     try {
       const response = await axios.request(options);
       setMyMovies(response.data.Search);
-      console.log(response.data.Search); // Assuming you want to set the movie results to myMovies
     } catch (error) {
       console.error(error);
     }

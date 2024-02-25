@@ -1,11 +1,11 @@
 import React from 'react'
-import Loader from '../loader/Loader'
-
+import HeroPage from './hero/HeroPage'
+import { Box } from '@mui/material'
 const Home = () => {
   return (
-    <div>
-      <Loader/>
-    </div>
+    <Box >
+      <HeroPage/>
+    </Box>
   )
 }
 
