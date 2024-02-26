@@ -18,7 +18,7 @@ const MovieProvider = ({ children }) => {
 
     try {
       const response = await axios.request(options);
-      setMyMovies(response.data.Search);
+      setMyMovies(await response.data.Search);
     } catch (error) {
       console.error(error);
     }

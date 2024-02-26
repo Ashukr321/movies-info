@@ -12,11 +12,11 @@ const MovieCard = ({ poster, title, type, year }) => {
   },
   )
   return (
-    <Card sx={{ width: 345, height: 400 }} data-aos="fade-up">
+    <Card sx={{ width: 345, height: 290 }} data-aos="fade-up">
       <CardActionArea>
         <CardMedia
           component="img"
-          height="240px"
+          height="200px"
           image={poster}
           alt="Movie Poster"
         />
