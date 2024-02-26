@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
 import './HeroPage.css';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const HeroPage = () => {
+  useEffect(()=>{
+    Aos.init();
+  })
   return (
     <Box className="hero" >
-      <Grid container spacing={2} sx={{ padding: { xs: "80px 10px", sm: "60px 40px" } }}>
+      <Grid container spacing={2} sx={{ padding: { xs: "80px 10px", sm: "60px 40px" } }} data-aos="zoom-in">
         {/* Left Side - Images */}
         <Grid item xs={12} sm={6} >
           <img
